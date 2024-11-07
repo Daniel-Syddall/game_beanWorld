@@ -1,0 +1,4 @@
+pyinstaller --onefile -w Main.py
+
+--onefile == Exe in one file
+-w == Don't open cmd

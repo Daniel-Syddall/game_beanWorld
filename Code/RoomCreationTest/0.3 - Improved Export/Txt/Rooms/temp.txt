@@ -1,0 +1,9 @@
+maxX-5:maxY-1:spawnCount-1:sendCount-1:
+state:5-pass:
+0:5-color_white:
+1:5-:
+2:5-:
+3:5-:
+4:5-:
+spawnX-0:spawnY-0:
+sendX-0:sendY-0:sendRoom-temp:sendSpawn-0:

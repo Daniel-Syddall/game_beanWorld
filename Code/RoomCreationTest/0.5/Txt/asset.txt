@@ -1,0 +1,6 @@
+spriteCount-1:tileCount-4:
+default:Sprites
+louis0:Tiles
+louis1:
+louis2:
+louis3:

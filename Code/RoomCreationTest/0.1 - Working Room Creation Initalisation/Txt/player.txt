@@ -1,0 +1,1 @@
+sprite-asset_sprite_default:room-temp:roomX-8:roomY-6:

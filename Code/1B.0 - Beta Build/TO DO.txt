@@ -1,0 +1,5 @@
+ - Create a Custom Text Box with a square outline to the left for Character Images (with space below to display the characters name) (upside down triangle to show the text can be skipped)
+
+ - Import the final few custom characters
+
+ - Replace the current Text box system with the New Text box system

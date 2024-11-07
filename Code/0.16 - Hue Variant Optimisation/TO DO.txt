@@ -1,0 +1,11 @@
+ - Change file naming conventions to lower case (change naming conventions accordingly)
+
+ - Instead of creating an Idle hue backdrop, save a unique Image file for RGBA Changes to each individual tile of each of the following tile type:
+      * GROUND
+	* EDGE
+	* DECOR (Already Done, use as format)
+	* PLAYER
+
+ ^ Do not over complicate this section with optimisation in mind, it is not worth it (Trust me, I tried.)
+
+ - Utilize original Blit meathod, or continue to use the current meathod but with the new Hue system implemented, your choice :|

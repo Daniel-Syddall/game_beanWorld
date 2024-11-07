@@ -1,0 +1,41 @@
+rpg.x = temp_surfaceX
+rpg.y = temp_surfaceY
+rpg.Surface.Width = temp_surfaceWidth
+rpg.Surface.Height = temp_surfaceHeight
+image.width = rpg.asset["character"][rpg.textBox_character].get_width()
+image.height = rpg.asset["character"][rpg.textBox_character].get_height()
+
+------------------------------------------------------------------------
+
+startX = temp_surfaceX + (temp_surfaceWidth*(PERC_OF_SCREEN))
+startY = temp_surfaceY + (temp_surfaceHeight*(PERC_OF_SCREEN))
+maxWidth = math.floor(temp_surfaceWidth*(PERC_OF_SCREEN))
+maxHeight = math.floor(temp_surfaceHeight*(PERC_OF_SCREEN))
+if image.width >= image.height:
+   imageWidth = maxWidth
+   imageHeight = math.floor((maxWidth/rpg.asset["character"][rpg.textBox_character].get_width())*rpg.asset["character"][rpg.textBox_character].get_height())
+else:
+   imageWidth = math.floor((maxHeight/rpg.asset["character"][rpg.textBox_character].get_height())*rpg.asset["character"][rpg.textBox_character].get_width())
+   imageHeight = maxHeight
+imageX = startX + math.floor((maxWidth-imageWidth)/2)
+imageY = startY + math.floor((maxWidth-imageWidth)/2)
+self.app.window.blit(pygame.transform.scale(rpg.asset["character"][rpg.textBox_character],(imageWidth,imageHeight)),(startX,startY))
+
+------------------------------------------------------------------------
+
+maxWidth = math.floor(RPG.Surface.Width*(Perc of screen))
+maxHeight = math.floor(RPG.Surface.Height*(Perc of screen))
+
+if image.width >= image.height:
+   imageWidth = maxWidth
+   imageHeight = math.floor((maxWidth/image.width)*image.height)
+
+elif image.height < image.width:
+   imageWidth = math.floor((maxHeight/image.height)*image.width)
+   imageHeight = maxHeight
+
+startX = rpg.x + rpg.Surface.Width*(Perc of screen)
+startY = rpg.y + rpg.Surface.Height*(Perc of screen)
+
+imageX = startX + math.floor((maxWidth-imageWidth)/2)
+imageY = startY + math.floor((maxWidth-imageWidth)/2)
